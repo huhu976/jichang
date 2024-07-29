@@ -19,8 +19,7 @@ proxies:
   - {name: 🇭🇰 hk1, server: 47.76.162.143, port: 51371, type: vmess, uuid: e9e922a8-c5fc-4db4-ef69-b739ae8f084b, alterId: 0, cipher: auto, tls: false}
   - {name: 🇭🇰 HK2, server: 47.76.143.179, port: 21862, type: vmess, uuid: ea51ab9b-5206-4e82-a228-7b8e05b7f4c5, alterId: 0, cipher: auto, tls: false}
 
-  - {name: 状态正常1, server: 103.255.208.241, port: 9000, type: socks5, username: 0deb2de4-4e71edf4-63430d, password: wifi-tr---}
-  - {name: 状态正常2, server: 103.255.208.241, port: 9001, type: socks5, username: 0deb2de4-4e71edf4-9d9aeb, password: wifi-tr---}
+ 
  
 
 proxy-providers:
@@ -36,14 +35,7 @@ proxy-providers:
               url: http://www.gstatic.com/generate_204  
 
 proxy-groups:
-  - name: Googleplay
-    type: select
-    proxies:
-
-      - 状态正常1
-      - 状态正常2
-     
-
+  
   - name: Proxies
     type: select
     proxies:
