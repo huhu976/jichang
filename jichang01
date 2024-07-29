@@ -42,7 +42,6 @@ proxy-groups:
      
       - 🇭🇰 hk1
       - 🇭🇰 HK2
-    use:
       - 机场
 
     url: http://www.gstatic.com/generate_204
