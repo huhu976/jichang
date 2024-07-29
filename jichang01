@@ -49,28 +49,28 @@ proxy-groups:
     interval: 600
     udp: false
 rules:
-  - DOMAIN-SUFFIX,ipapi.co,Googleplay
-  - DOMAIN-SUFFIX,ip-api.com,Googleplay
-  - DOMAIN-SUFFIX,api.ip.sb,Googleplay
-  - DOMAIN-SUFFIX,IPInfo.io,Googleplay
-  - DOMAIN-SUFFIX,ipip.net,Googleplay
-  - DOMAIN-SUFFIX,skk.moe,Googleplay
+  - DOMAIN-SUFFIX,ipapi.co,Proxies
+  - DOMAIN-SUFFIX,ip-api.com,Proxies
+  - DOMAIN-SUFFIX,api.ip.sb,Proxies
+  - DOMAIN-SUFFIX,IPInfo.io,Proxies
+  - DOMAIN-SUFFIX,ipip.net,Proxies
+  - DOMAIN-SUFFIX,skk.moe,Proxies
   - DOMAIN-KEYWORD,game,Proxies
   - DOMAIN-KEYWORD,gvt1,Proxies
   - DOMAIN-KEYWORD,googlevideo.com,Proxies
   - DOMAIN-KEYWORD,lra8j.com,DIRECT
   - DOMAIN-KEYWORD,cn,DIRECT
-  - DOMAIN,play-fe.googleapis.com,Googleplay
-  - IP-CIDR,172.217.160.110/32,Googleplay
-  - IP-CIDR,172.217.163.46/32,Googleplay
-  - IP-CIDR,172.217.160.78/32,Googleplay
-  - IP-CIDR,142.251.42.238/32,Googleplay
-  - IP-CIDR,142.251.43.14/32,Googleplay
-  - IP-CIDR,142.251.220.77/32,Googleplay
-  - IP-CIDR,142.251.42.237/32,Googleplay
-  - IP-CIDR,172.217.163.45/32,Googleplay
-  - IP-CIDR,142.250.204.78/32,Googleplay
-  - IP-CIDR,142.250.66.142/32,Googleplay
+  - DOMAIN,play-fe.googleapis.com,Proxies
+  - IP-CIDR,172.217.160.110/32,Proxies
+  - IP-CIDR,172.217.163.46/32,Proxies
+  - IP-CIDR,172.217.160.78/32,Proxies
+  - IP-CIDR,142.251.42.238/32,Proxies
+  - IP-CIDR,142.251.43.14/32,Proxies
+  - IP-CIDR,142.251.220.77/32,Proxies
+  - IP-CIDR,142.251.42.237/32,Proxies
+  - IP-CIDR,172.217.163.45/32,Proxies
+  - IP-CIDR,142.250.204.78/32,Proxies
+  - IP-CIDR,142.250.66.142/32,Proxies
   - DOMAIN-SUFFIX,1password.com,DIRECT
   - DOMAIN-SUFFIX,vultr.com,DIRECT
   - DOMAIN-SUFFIX,mb3admin.com,DIRECT
