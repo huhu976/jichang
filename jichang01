@@ -23,8 +23,7 @@ proxies:
 proxy-providers:
           机场:
             type: http
-            url: https://api.tsutsu.one/sub?target=clash&url=https%3A%2F%2Ffly0001.buzz%2Fgateway%2Ffeitu%3Ftoken%3D590486ea91d8713fe610c4b430622ad1&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flhl77%2Fsub-ini%40main%2Ftsutsu-full.ini
-            interval: 86400
+            url: https://fly0001.buzz/gateway/feitu?token=590486ea91d8713fe610c4b430622ad1
             path: ./proxy_provider/jc.yaml
             udp: false
             health-check:
