@@ -24,7 +24,7 @@ proxies:
 proxy-groups:
   
   - name: Proxies
-       type: http
+       
             url: https://fly0001.buzz/gateway/feitu?token=590486ea91d8713fe610c4b430622ad1
             interval: 86400
             path: ./proxy_provider/jc.yaml
