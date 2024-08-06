@@ -29,14 +29,6 @@ proxy-groups:
       interval: 600
       url: http://www.gstatic.com/generate_204
 
-
-
-    type: select
-    disable-udp: false
-    health-check:
-      enable: false
-      interval: 600
-      url: http://www.gstatic.com/generate_204
 rules:
   - DOMAIN,play.googleapis.com,主线路
   - DOMAIN,myaccount.google.com,主线路
