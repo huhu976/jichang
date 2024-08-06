@@ -4,15 +4,6 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
-proxies:
-  - name: kong
-    type: 
-    server: 
-    port: "1000"
-    username: 
-    password: 
-    udp: true
-
 
 proxy-providers:
           机场:
@@ -29,7 +20,6 @@ proxy-groups:
   - name: 主线路
     proxies:
       - DIRECT
-      - 谷歌分流
     use:
       - 机场
     type: select
@@ -38,19 +28,7 @@ proxy-groups:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  - name: 谷歌分流
-    proxies:
-      - Play
-      - REJECT 
-    type: select
-    disable-udp: false
-    health-check:
-      enable: false
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  - name: Play
-    proxies:
-      - kong
+
 
 
     type: select
@@ -60,10 +38,10 @@ proxy-groups:
       interval: 600
       url: http://www.gstatic.com/generate_204
 rules:
-  - DOMAIN,play.googleapis.com,谷歌分流
-  - DOMAIN,myaccount.google.com,谷歌分流
-  - DOMAIN-KEYWORD,accounts.google.com,谷歌分流
-  - DOMAIN,play-fe.googleapis.com,谷歌分流
-  - DOMAIN,sspanel.net,谷歌分流
-  - DOMAIN,payments-pa.googleapis.com,谷歌分流
+  - DOMAIN,play.googleapis.com,主线路
+  - DOMAIN,myaccount.google.com,主线路
+  - DOMAIN-KEYWORD,accounts.google.com,主线路
+  - DOMAIN,play-fe.googleapis.com,主线路
+  - DOMAIN,sspanel.net,主线路
+  - DOMAIN,payments-pa.googleapis.com,主线路
   - MATCH,主线路
